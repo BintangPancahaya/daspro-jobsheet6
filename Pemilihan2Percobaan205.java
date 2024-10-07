@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class Pemilihan2Percobaan205 {
     public static void main(String[] args) {
-        Scanner Absen = new Scanner(System.in);
+        Scanner input05 = new Scanner(System.in);
         String menu, member, pembayaran;
         int jumlahBeli, pilihan_menu;
         double diskon, harga, totalBayar;
@@ -13,12 +13,12 @@ public class Pemilihan2Percobaan205 {
         System.out.println("2. Ice Tea");
         System.out.println("3. Paket Bunding (Ricebowl + Ice Tea)");
         System.out.println("-------------------------------------");
-        System.out.println("masukkan angka dari menu yang dipilih = ");
-        pilihan_menu = Absen.nextInt();
-        Absen.nextLine();
+        System.out.print("masukkan angka dari menu yang dipilih = ");
+        pilihan_menu = input05.nextInt();
+        input05.nextLine();
         
         System.out.print("Apakah punya member (y/n) ? = ");
-        member = Absen.nextLine();
+        member = input05.nextLine();
         System.out.println("-------------------------------------");
         
         if (member.equalsIgnoreCase("y")) {//Menggunakan equalsIgnoreCase untuk membandingkan string
@@ -41,7 +41,7 @@ public class Pemilihan2Percobaan205 {
                 return; // Menghentikan eksekusi lebih lanjut jika pilihan salah
             }
             System.out.println("Pilih pembayaran (cash/qris)");
-            pembayaran = Absen.nextLine();
+            pembayaran = input05.nextLine();
 
             if (pembayaran.equalsIgnoreCase("qris")) {
                 harga -= 1000;
@@ -76,7 +76,7 @@ public class Pemilihan2Percobaan205 {
             }
 
             System.out.println("Pilih pembayaran (cash/qris)");
-            pembayaran = Absen.nextLine();
+            pembayaran = input05.nextLine();
                 
                 if (pembayaran.equalsIgnoreCase("qris")) {
                     harga -= 1000;
